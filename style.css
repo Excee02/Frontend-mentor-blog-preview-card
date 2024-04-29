@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+
+.card {
+    width: 370px;
+    margin-left: 35%;
+    margin-top: 50px;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow:  10px 10px hsl(0, 0%, 7%) ;
+}
+
+.card :hover {
+    cursor: pointer;
+}
+
+.card .illustration {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card .learning {
+    background-color: hsl(47, 88%, 63%);
+    display: inline;
+    padding: 2px 5px;
+    margin-bottom: 15px;
+    width: 70px;
+    font-size: 16px;
+}
+
+.card .publish {
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.card h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.card h1:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.card .bg-grey {
+    color: hsl(0, 0%, 50%);
+}
+
+.card .image img {
+    width: 40px;
+    /* justify-content: flex-start; */
+}
+
+.card .image  {
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+    margin-left: 0;
+    border: none;
+    width: 100%;
+    /* justify-content: flex-start; */
+}
+
+.card .image p {
+    align-self: center;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.attribution { 
+    display: inline-flex;
+    justify-content: center;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:375px) {
+
+    .card {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
